@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri - Universitas Hamzanwadi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        section {
+            padding: 50px 0;
+        }
+        .shadow-effect {
+            transition: transform 0.3s;
+        }
+        .shadow-effect:hover {
+            transform: scale(1.05);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-image {
+            border-radius: 0; /* Menghilangkan sudut melengkung */
+            height: 700px; /* Mengatur tinggi gambar menjadi 700px */
+            object-fit: cover; /* Memastikan gambar menyesuaikan dengan baik */
+        }
+        .img-gallery {
+            height: 250px; /* Mengatur tinggi gambar lebih besar */
+            object-fit: cover; /* Memastikan gambar menyesuaikan dengan baik */
+            display: block; /* Menampilkan gambar sebagai block untuk rata tengah */
+            margin: 0 auto; /* Mengatur margin untuk rata tengah */
+        }
+        .btn-daftar {
+            color: green; /* Mengubah warna teks tombol menjadi hijau */
+            background-color: transparent; /* Mengatur latar belakang menjadi transparan */
+            border: 2px solid green; /* Menambahkan border berwarna hijau */
+        }
+        .btn-daftar:hover {
+            background-color: green; /* Mengubah latar belakang saat hover */
+            color: white; /* Mengubah warna teks saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PROFIL MAHASISWA UNIVERSITAS HAMZANWADI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hal1">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hal2">Profil Kampus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hal3">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hal4">Registrasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Halaman 1: Profil -->
+    <section id="hal1" class="container">
+        <h2 class="text-center">Profil</h2>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <img src="foto.jpg.jpeg" class="img-fluid profile-image shadow-lg shadow-effect" alt="Foto Profil">
+                <p class="lead mt-3">Halo, Perkenalkan nama saya <strong>Elga Putri Khaerunnisa</strong>. Saat ini saya sedang menempuh pendidikan di Universitas Hamzanwadi, Program Studi Pendidikan Informatika, Semester 6.</p>
+                <div class="video-container mt-4">
+                    <iframe src="https://www.youtube.com/embed/yWyv0LVDZgo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman 2: Profil Diri -->
+    <section id="hal2" class="container">
+        <h2 class="text-center">Profil Diri</h2>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>NPM</th>
+                    <th>Mata Kuliah</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Elga Putri Khaerunnisa</td>
+                    <td>220305006</td>
+                    <td>Pemrograman Web</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Qona'ah</td>
+                    <td>220305019</td>
+                    <td>Basis Data</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lasmi</td>
+                    <td>220305011</td>
+                    <td>Jaringan Lanjut</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Aljannah</td>
+                    <td>220305003</td>
+                    <td>Multimedia Interaktif</td>
+                </tr>
+            </tbody>
+        </table>
+    </section><!-- Halaman 3: Galeri -->
+<section id="hal3" class="container">
+    <h2 class="text-center">Galeri Foto dan Video</h2>
+    <div class="row galeri">
+        <div class="col-md-4 text-center">
+            <img src="foto.jpg.jpeg" class="img-fluid img-gallery shadow-effect" alt="Foto 1">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="rahel.jpg" class="img-fluid img-gallery shadow-effect" alt="Foto 2">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="elga.jpg" class="img-fluid img-gallery shadow-effect" alt="Foto 3">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="elga2.jpg" class="img-fluid img-gallery shadow-effect" alt="Foto 4">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="elga1.jpg" class="img-fluid img-gallery shadow-effect" alt="Foto 5">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="elga3.jpg" class="img-fluid img-gallery shadow-effect" alt="Foto 6">
+        </div>
+        <div class="col-md-4">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/yWyv0LVDZgo" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/8DvRh10OCp0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/3q2673bPPDc" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Halaman 4: Formulir Pendaftaran -->
+    <section id="hal4" class="container">
+        <h2 class="text-center">Formulir Pendaftaran</h2>
+        <form id="formPendaftaran" class="border p-4 rounded shadow">
+            <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Asal Sekolah</label>
+                <input type="text" class="form-control" id="asal_sekolah" placeholder="Nama sekolah asal" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="contoh@gmail.com" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Pilih Jurusan</label>
+                <select class="form-control" id="jurusan" required>
+                    <option value="">-- Pilih Jurusan --</option>
+                    <option>Pendidikan Informatika</option>
+                    <option>Teknik Komputer</option>
+                    <option>Farmasi</option>
+                    <option>Teknik Informatika</option>
+                    <option>Pendidikan Biologi</option>
+                    <option>Statistika</option>
+                    <option>Teknik Lingkungan</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tanggal_lahir" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nomor Telepon</label>
+                <input type="tel" class="form-control" id="telepon" placeholder="Masukkan nomor telepon" required>
+            </div>
+            <button type="submit" class="btn btn-daftar w-100">Daftar</button>
+        </form>
+
+        <!-- Pesan Sukses -->
+        <div id="pesanSukses" class="alert alert-success mt-3 d-none text-center">
+            <!-- Pesan sukses akan muncul di sini -->
+        </div>
+    </section>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("#formPendaftaran");
+            const pesanSukses = document.querySelector("#pesanSukses");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Mencegah pengiriman form bawaan
+
+                // Menampilkan pesan sukses
+                pesanSukses.classList.remove("d-none");
+                pesanSukses.innerHTML = "<strong>Pendaftaran Berhasil!</strong> Terima kasih telah mendaftar.";
+
+                // Menghapus isi formulir setelah sukses
+                form.reset();
+
+                // Sembunyikan pesan sukses setelah 3 detik
+                setTimeout(() => {
+                    pesanSukses.classList.add("d-none");
+                }, 3000);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
